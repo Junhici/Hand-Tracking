@@ -98,7 +98,6 @@ class hand_detector():
         
         # If there are some landmarks on the image
         if len(self.lm_list) != 0:
-            # Check if the thumb is on the left or right and if it is up
             if self.lm_list[self.tip_ids[0]][1] < self.lm_list[self.tip_ids[0] - 1][1]:
                 fingers.append(1)
             else:
